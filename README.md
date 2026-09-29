@@ -20,8 +20,6 @@ This public preview intentionally contains no private trading strategy, signal t
 - Output files are create-only.
 - The tools do not choose trading thresholds, strategies, or economic values.
 
-## License status
+## License
 
-This repository is currently a **public preview with no open-source license selected yet**.
-
-Until an explicit license is added, treat the code as viewable source rather than a completed open-source release.
+Licensed under the Apache License, Version 2.0. See `LICENSE` for the full terms.
