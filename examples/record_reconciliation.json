@@ -1,0 +1,21 @@
+{
+  "left_rows": [
+    {"row_id": "synthetic-l1", "source": "synthetic-provider", "stream": "demo-feed", "instrument": "TEST", "time_ms": 100, "amount": "1.00"},
+    {"row_id": "synthetic-l2", "source": "synthetic-provider", "stream": "demo-feed", "instrument": "TEST", "time_ms": 100, "amount": "2.0"},
+    {"row_id": "synthetic-l3", "source": "synthetic-provider", "stream": "demo-feed", "instrument": "TEST", "time_ms": 100, "amount": "2.00"},
+    {"row_id": "synthetic-l4", "source": "synthetic-provider", "stream": "demo-feed", "instrument": "TEST", "time_ms": 100, "amount": "9"}
+  ],
+  "right_rows": [
+    {"row_id": "synthetic-r1", "capture_source": "synthetic-provider", "feed": "demo-feed", "asset": "TEST", "tick_us": 100001, "value": "1.0"},
+    {"row_id": "synthetic-r2", "capture_source": "synthetic-provider", "feed": "demo-feed", "asset": "TEST", "tick_us": 100999, "value": "1.000"},
+    {"row_id": "synthetic-r3", "capture_source": "synthetic-provider", "feed": "demo-feed", "asset": "TEST", "tick_us": 100000, "value": "2"},
+    {"row_id": "synthetic-other", "capture_source": "another-synthetic-provider", "feed": "demo-feed", "asset": "TEST", "tick_us": 100000, "value": "1"}
+  ],
+  "rules": [
+    {"left_field": "source", "right_field": "capture_source", "mode": "exact_text"},
+    {"left_field": "stream", "right_field": "feed", "mode": "exact_text"},
+    {"left_field": "instrument", "right_field": "asset", "mode": "exact_text"},
+    {"left_field": "amount", "right_field": "value", "mode": "decimal_numeric"},
+    {"left_field": "time_ms", "right_field": "tick_us", "mode": "integer_time_floor", "left_unit": "ms", "right_unit": "us", "left_semantics": "synthetic_capture_clock", "right_semantics": "synthetic_capture_clock"}
+  ]
+}

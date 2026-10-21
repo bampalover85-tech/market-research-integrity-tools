@@ -1,0 +1,7 @@
+[
+  {"source": "synthetic-provider", "stream": "demo-feed", "instrument": "TEST", "batch": "batch-A", "event_id": "synthetic-q1", "position": 0, "kind": "quote", "bid": "10.00", "ask": "10.50"},
+  {"source": "synthetic-provider", "stream": "demo-feed", "instrument": "TEST", "batch": "batch-A", "event_id": "synthetic-t1", "position": 1, "kind": "trade", "price": "10.25"},
+  {"source": "synthetic-provider", "stream": "demo-feed", "instrument": "TEST", "batch": "batch-A", "event_id": "synthetic-q2", "position": 2, "kind": "quote", "bid": "11.00", "ask": "10.50"},
+  {"source": "synthetic-provider", "stream": "demo-feed", "instrument": "TEST", "batch": "batch-A", "event_id": "synthetic-t2", "position": 3, "kind": "trade", "price": "10.75"},
+  {"source": "synthetic-provider", "stream": "demo-feed", "instrument": "TEST", "batch": "batch-B", "event_id": "synthetic-t3", "position": 0, "kind": "trade", "price": "10.25"}
+]
