@@ -5,6 +5,8 @@
 - Generic invariant validation.
 - Generic byte-length and SHA256 binding checks.
 - Generic JSON differential comparison.
+- Generic recording-order context transforms with synthetic examples only; no causal, freshness or execution claims.
+- Generic field-mapped record-candidate comparisons that retain ambiguity; no inferred native identity or provenance claims.
 - Synthetic tests and generic documentation.
 
 ## Excluded
